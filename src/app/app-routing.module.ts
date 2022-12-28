@@ -6,6 +6,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { MoviesComponent } from './movies/movies.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { RegisterComponent } from './register/register.component';
 import { TvComponent } from './tv/tv.component';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'movies', component: MoviesComponent},
   {path: 'tv', component: TvComponent},
   {path: 'contacts', component: ContactsComponent},
+  {path: 'register', component: RegisterComponent},
   {path: '**', component: NotFoundComponent},
   
 ];

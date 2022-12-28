@@ -14,6 +14,7 @@ import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/home.component';
 import { TvComponent } from './tv/tv.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TvComponent } from './tv/tv.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

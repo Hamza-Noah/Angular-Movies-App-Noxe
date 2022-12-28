@@ -1,1 +1,39 @@
-<p>register works!</p>
+<form action="" (ngSubmit)="submitRegister()" [formGroup]="registerForm">
+    <div>
+        <label for="first_name"></label>
+        <input type="text" formControlName="first_name" class="form-control" id="first_name">
+        <div *ngIf="false" class="alert alert-danger my-2">
+            <p class="mb-0">First Name is required</p>
+            <p class="mb-0">Minimum length is 3 chars</p>
+            <p class="mb-0">Maximumn length is 8 chars</p>
+        </div>
+    </div>
+    <div>
+        <label for="last-name"></label>
+        <input type="text" formControlName="last_name" class="form-control" id="last_name">
+        <div *ngIf="false" class="alert alert-danger my-2">
+            <p class="mb-0">Last Name is required</p>
+            <p class="mb-0">Minimum length is 3 chars</p>
+            <p class="mb-0">Maximumn length is 8 chars</p>
+        </div>
+    </div>
+    <div>
+        <label for="first_name"></label>
+        <input type="email" formControlName="email" class="form-control" id="email">
+        <div *ngIf="false" class="alert alert-danger my-2">
+            <p class="mb-0">First Name is required</p>
+            <p class="mb-0">Minimum length is 3 chars</p>
+            <p class="mb-0">Maximumn length is 8 chars</p>
+        </div>
+    </div>
+    <div>
+        <label for="first_name"></label>
+        <input type="text" formControlName="email" class="form-control" id="first_name">
+        <div *ngIf="false" class="alert alert-danger my-2">
+            <p class="mb-0">First Name is required</p>
+            <p class="mb-0">Minimum length is 3 chars</p>
+            <p class="mb-0">Maximumn length is 8 chars</p>
+        </div>
+    </div>
+    <button type="submit"></button>
+</form>
